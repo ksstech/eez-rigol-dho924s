@@ -1,0 +1,133 @@
+{
+  "id": "9c869baa-966c-404e-b865-3264065ff97e",
+  "name": "rigol_dho924s",
+  "description": "200MHz 4-channel 12-bit oscilloscope (DHO900 series)",
+  "displayName": "Rigol DHO924S",
+  "version": "1.0.0",
+  "author": "Community",
+  "eez-studio": {
+    "properties": {
+      "idn": "RIGOL TECHNOLOGIES,DHO924S",
+      "connection": {
+        "ethernet": {
+          "port": 5555
+        },
+        "usbtmc": {
+          "idVendor": "0x1ab1",
+          "idProduct": "0x0515"
+        }
+      },
+      "channels": [
+        {
+          "color": "#FBFB00",
+          "colorInverse": "#AEAE00"
+        },
+        {
+          "color": "#03FFFF",
+          "colorInverse": "#00B5B5"
+        },
+        {
+          "color": "#F000F0",
+          "colorInverse": "#A300A3"
+        },
+        {
+          "color": "#007FFF",
+          "colorInverse": "#0059B3"
+        }
+      ]
+    },
+    "shortcuts": [
+      {
+        "id": "a607d593-0d69-4895-95df-928b59675d84",
+        "name": "Run",
+        "action": {
+          "type": "scpi-commands",
+          "data": "SYSTem:RUN"
+        },
+        "showInToolbar": true,
+        "toolbarButtonPosition": 1,
+        "toolbarButtonColor": "#78C36A",
+        "requiresConfirmation": false,
+        "keybinding": "f5"
+      },
+      {
+        "id": "6ba1cf6e-092e-4230-8b8a-16951242022c",
+        "name": "Stop",
+        "action": {
+          "type": "scpi-commands",
+          "data": "SYSTem:STOP"
+        },
+        "showInToolbar": true,
+        "toolbarButtonPosition": 2,
+        "toolbarButtonColor": "#E665A0",
+        "requiresConfirmation": false,
+        "keybinding": "f6"
+      },
+      {
+        "id": "008d56e3-79ac-4ba9-93af-77f47984900c",
+        "name": "Single",
+        "action": {
+          "type": "scpi-commands",
+          "data": "TRIGger:SWEep SING"
+        },
+        "showInToolbar": true,
+        "toolbarButtonPosition": 3,
+        "toolbarButtonColor": "#FF9800",
+        "requiresConfirmation": false,
+        "keybinding": "f7"
+      },
+      {
+        "id": "e39db4de-5229-40ce-953d-d4f6e33346d6",
+        "name": "Autoset",
+        "action": {
+          "type": "scpi-commands",
+          "data": "SYSTem:AUToset"
+        },
+        "showInToolbar": true,
+        "toolbarButtonPosition": 4,
+        "toolbarButtonColor": "#2196F3",
+        "requiresConfirmation": true,
+        "keybinding": "f4"
+      },
+      {
+        "id": "3bfa14a9-80ef-4de0-b5c6-f796b2daf614",
+        "name": "Screenshot",
+        "action": {
+          "type": "scpi-commands",
+          "data": "DISPlay:DATA?"
+        },
+        "showInToolbar": true,
+        "toolbarButtonPosition": 5,
+        "toolbarButtonColor": "#7BC3D4",
+        "requiresConfirmation": false,
+        "keybinding": "f2"
+      },
+      {
+        "id": "cfd8cd83-8bf5-43fb-ae98-de7fdf36693f",
+        "name": "Status",
+        "action": {
+          "type": "scpi-commands",
+          "data": "*IDN?\nTRIGger:STATus?\nTIMebase:MAIN:SCALe?\nACQuire:SRATe?"
+        },
+        "showInToolbar": true,
+        "toolbarButtonPosition": 6,
+        "toolbarButtonColor": "#607D8B",
+        "requiresConfirmation": false,
+        "keybinding": "f8"
+      },
+      {
+        "id": "b4138a2c-9159-4bbe-8386-1c05f49d74b4",
+        "name": "Reset",
+        "action": {
+          "type": "scpi-commands",
+          "data": "*RST"
+        },
+        "showInToolbar": false,
+        "toolbarButtonPosition": 0,
+        "toolbarButtonColor": "#F44336",
+        "requiresConfirmation": true
+      }
+    ],
+    "moreDescription": "The Rigol DHO924S is a 4-channel 200MHz 12-bit oscilloscope with 2GSa/s sample rate and up to 200Mpts memory depth. Features include hardware-accelerated waveform display, 12-bit vertical resolution, and comprehensive trigger modes. Supports SCPI over LAN (port 5555) and USB-TMC.\n\nFamily covers: DHO924S (200MHz 12-bit), DHO914S (100MHz 12-bit), DHO924 (200MHz 8-bit), DHO914 (100MHz 8-bit).\n\nNote: Verify IDN string prefix on your firmware \u2014 some units return 'RIGOL TECHNOLOGIES' rather than 'Rigol Technologies'."
+  }
+}
