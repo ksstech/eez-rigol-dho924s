@@ -1,9 +1,9 @@
 {
   "id": "9c869baa-966c-404e-b865-3264065ff97e",
   "name": "rigol_dho924s",
-  "description": "200MHz 4-channel 12-bit oscilloscope (DHO900 series)",
+  "description": "250 MHz 4-channel 12-bit oscilloscope with 25 MHz AWG (DHO900 series)",
   "displayName": "Rigol DHO924S",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Community",
   "eez-studio": {
     "properties": {

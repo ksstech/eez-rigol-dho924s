@@ -1,9 +1,14 @@
 # eez-rigol-dho924s
 
-EEZ Studio extension for the **Rigol DHO924S** — 4-channel, 200 MHz, 12-bit
-oscilloscope, 2 GSa/s sample rate, up to 200 Mpts memory depth. Also covers
-the DHO914S (100 MHz 12-bit), DHO924 (200 MHz 8-bit), and DHO914 (100 MHz
-8-bit) — same command family.
+EEZ Studio extension for the **Rigol DHO924S** — 4-channel, 250 MHz, 12-bit
+oscilloscope, 1.25 GSa/s sample rate, up to 50 Mpts memory depth, with a
+1-channel 25 MHz arbitrary waveform generator and an optional 16-channel
+logic analyzer (PLA2216 probe). Also covers the DHO914S (125 MHz, with AWG),
+DHO924 (250 MHz), and DHO914 (125 MHz) — all 12-bit, same command family.
+
+Note: this extension does not yet expose the AWG or logic analyzer — see
+[ksstech/eez: docs/rigol-scope-support-plan.md](https://github.com/ksstech/eez/blob/master/docs/rigol-scope-support-plan.md)
+for the plan that adds both.
 
 Like its siblings [eez-keysight-34465a](https://github.com/ksstech/eez-keysight-34465a)
 and [eez-rigol-mho98](https://github.com/ksstech/eez-rigol-mho98), and unlike
