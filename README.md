@@ -35,7 +35,13 @@ No `image.png` currently included (unlike the other three extensions in
 this family) — worth adding one for a consistent icon in EEZ Studio's
 instrument list.
 
-Built as a zip and published via [GitHub Releases](https://github.com/ksstech/eez-rigol-dho924s/releases) — not committed to the repo.
+Built as a zip (`python3 build-extension-zip.py` — cross-platform, stdlib
+only) and published via [GitHub Releases](https://github.com/ksstech/eez-rigol-dho924s/releases)
+— not committed to the repo. New here and just want the extension
+installed? See
+[ksstech/eez: docs/installing-extensions.md](https://github.com/ksstech/eez/blob/main/docs/installing-extensions.md)
+for the download/install steps (and two easy mistakes to avoid — grabbing
+the wrong zip, and Safari auto-unzipping it).
 
 ## Functionality — shortcuts
 
